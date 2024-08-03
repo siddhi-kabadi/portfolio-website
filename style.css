@@ -1,0 +1,653 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color:#834333;
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: #5C4033;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: bold;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  border-radius: 50%;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: #99582a 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: #99582a;
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: #8b5e34;
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  background: #ffedd8;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+.timeline-container {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  border-left: 4px solid #5C4033; /* Vertical line */
+}
+
+.timeline-block {
+  position: relative;
+  width: 40%; /* Adjust width based on your layout */
+  padding: 10px 20px;
+  text-align: left;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Dot styles */
+.timeline-dot {
+  position: absolute;
+  top: 15px; /* Adjust this value to align with the middle of your content */
+  left: -6px; /* Half the width of the border to center it */
+  width: 12px;
+  height: 12px;
+  background-color: #5C4033;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+/* Right block */
+.right {
+  margin-left: 50%; /* Half of the container width */
+}
+
+/* Left block */
+.left {
+  margin-left: 10%; /* Adjust this percentage to match your layout */
+  text-align: right;
+}
+
+/* Content styles */
+.timeline-content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* Styling titles and paragraphs inside timeline blocks */
+.timeline-content h2, .timeline-content h3, .timeline-content p {
+  margin: 0;
+  padding: 4px 0;
+}
+
+.skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;  /* Ensure the container fits the full width */
+}
+
+.skill {
+  flex: 1 1 30%; /* Allows for two items per row */
+  background-color: #fff;
+  margin: 5px 1%; /* Small margin for spacing, adjust as needed */
+  padding: 8px 0; /* Padding for visual spacing inside each bar */
+  box-sizing: border-box;
+}
+
+.skill-name {
+  font-size: 12px;
+  margin-left: 20px; /* Space before the text starts */
+}
+
+.progress {
+  background-color: #e0e0e0; /* Light grey background */
+  border-radius: 10px;
+  height: 20px;
+  margin: 5px 20px; /* Margin around the bar */
+  width: auto; /* Automatically adjust width based on the text */
+  flex-grow: 1; /* Allows the progress bar to expand */
+}
+
+.progress-bar {
+  background-color: #4CAF50; /* Default color, use class or style to change per bar */
+  border-radius: 10px;
+  height: 100%;
+  width: 0; /* Set by JavaScript or inline style */
+  transition: width 0.5s ease-in-out; /* Smooth transition for the bar growth */
+}
+h4 {
+  text-align: center; /* Centers the text horizontally */
+  font-size: 24px; /* Sets a medium font size, adjust as needed */
+  font-weight: normal; /* Optional: adjusts the font weight if desired */
+  margin-top: 20px; /* Adds space above the header */
+  margin-bottom: 20px; /* Adds space below the header */
+  color: #603808; /* Sets a dark grey color for the text */
+}
+
+h5 {
+  text-align: center;
+  font-size: 18px; /* Sets a medium font size, adjust as needed */
+  font-weight: normal; /* Optional: adjusts the font weight if desired */
+  margin-top: 20px; /* Adds space above the header */
+  margin-bottom: 20px; /* Adds space below the header */
+  color: #603808; /* Sets a dark grey color for the text */
+}
+
+h6{
+  text-align: center;
+  font-size: 15px; /* Sets a medium font size, adjust as needed */
+  font-weight: normal; /* Optional: adjusts the font weight if desired */
+  margin-top: 20px; /* Adds space above the header */
+  margin-bottom: 20px; /* Adds space below the header */
+  color: #603808; /* Sets a dark grey color for the text */
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between; /* This will space out the boxes evenly */
+  padding: 20px; /* Padding around the container */
+  gap: 20px; /* Space between each box */
+}
+
+.skill-box {
+  flex: 1 1 30%; /* Allows three boxes to fit side by side on wider screens */
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.453);
+  border-radius: 8px;
+}
+
+.skill-box h4 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: circle;
+  padding: 0;
+}
+
+li {
+  padding: 5px 0;
+
+  margin-bottom: 5px;
+}
+
+.skill-name {
+  font-weight: bold;
+}
+
+.skill-box li 
+{
+  font-size: 12px; /* Sets the font size to 16px, adjust as needed */
+  line-height: 1.5; /* Adjusts line spacing for readability */
+  margin-bottom: 8px; /* Provides spacing between list items */
+}
+
+.publication-entry {
+  text-align: center; /* Center the text within the list */
+  font-size: 1.2em; /* Increase the font size, adjust as necessary */
+  margin-bottom: 10px; /* Adds some space below the journal name */
+}
+
+.publication-link-box {
+  text-align: center; /* Center the link box */
+  margin-top: 5px; /* Adds space between the journal name and the link */
+}
+
+.publication-link-box a {
+  font-family: inherit; /* Inherits the font-family from the parent container */
+  font-size: 12px; /* Smaller text for the link */
+  color: whitesmoke; /* Brown text color */
+  background-color: #690500; /* Creamy light brown background */
+  padding: 8px 16px; /* Slightly reduced padding to make the box smaller */
+  border-radius: 3px; /* Less pronounced rounded corners */
+  border: 1px solid #a67c52; /* Slightly darker border for contrast */
+  text-decoration: none; /* Removes underline from the link */
+  display: inline-block; /* Ensures the link behaves like an inline block */
+  text-align: center; /* Centers the link text */
+  margin: 0 auto; /* Centers the link box if it's the only element */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.publication-link-box a:hover {
+  background-color: #b08968; /* Lighter cream color on hover */
+}
+
+.publication-divider {
+  border: none;
+  height: 1px;
+  background-color: brown; /* Light gray line */
+  margin: 20px 0; /* Adds vertical spacing around the line */
+}
+
+.publication-description {
+  text-align: center; /* Centers the text */
+  font-size: 14px; /* Sets a suitable font size, adjust as needed */
+  color: #6f523b; /* Brown text color, to match other text */
+}
+
+.centered-title h3 {
+  text-align: center; /* Center-align the 'Stock Prediction Model' text */
+}
+
+.additional-info {
+  display: none; /* Initially hide the description text */
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+}
+
+.timeline-content:hover .additional-info {
+  display: block; /* Show the description text on hover */
+  opacity: 1;
+}
+
+.timeline-content {
+  transition: background-color 0.3s ease; /* Optional: Change background color on hover */
+}
+
