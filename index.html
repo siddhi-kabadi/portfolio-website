@@ -1,1 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Siddhi Kabadi</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#experience">Research & Publications</a></li>
+          <li><a href="#projects">Experience</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Siddhi</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/siddhipfp.JPG" alt="Siddhi Kabadi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hi! <span>&#128075; I'm</p>
+        <h1 class="title">Siddhi Kabadi</h1>
+        <p class="section__text__p2">CS + Economics @ SCU  <span>&#128052;</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Siddhi, Kabadi.pdf')"
+            style="color: #99582a;"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="window.location.href='mailto:skabadi@scu.edu'"
+          style="color: white;">
+            &#x1F48C; Email Me!
+         
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.location.href='https://www.linkedin.com/in/siddhikabadi/'">
+          
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/siddhi-kabadi'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <p> I'm double majoring in Computer Science and Economics at Santa Clara University. I'm interested in software engineering and data science, and am excited to use technology to analyze data patterns, create ethical and innovative solutions, and make a positive impact in today's tech-driven economy.  </p>
+      <br>
+      <p> Currently, I am working at SCU's Ethical, Pragmatic, and Intelligent Computing Lab as a IoT Research Assistant. I'm currently testing our lab's moisture temperature sensors using Arduino, and am uploading our conclusions to a dashboard. </p>
+      
+      <h4> My Skills: </h4>
+      <div class="skills-content">
+        <div class="skill">
+            <span class="skill-name">C/C++</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 88%; background-color: #606c38;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name">Machine Learning (TensorFlow) </span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 65%; background-color: #991218;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name">Assembly Language (ARM) </span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 72%; background-color: #eeaa23;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <span class="skill-name">Cloud Architecture</span>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%; background-color: #eeaa23;"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+          <span class="skill-name">Data Analysis (Matplotlib, NumPy, Pandas)</span>
+          <div class="progress">
+              <div class="progress-bar" style="width: 87%; background-color: #606c38;"></div>
+          </div>
+      </div>
+
+      <div class="skill">
+        <span class="skill-name">Arduino </span>
+        <div class="progress">
+            <div class="progress-bar" style="width: 68%; background-color: #991218;"></div>
+        </div>
+    </div>
+
+      <div class="skill">
+        <span class="skill-name">Front-End Dev (HTML, CSS, JavaScript, React, Svelte)</span>
+        <div class="progress">
+            <div class="progress-bar" style="width: 89%; background-color: #606c38;"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+      <span class="skill-name">Cryptography</span>
+      <div class="progress">
+          <div class="progress-bar" style="width: 75%; background-color: #eeaa23;"></div>
+      </div>
+  </div>
+
+  <div class="skill">
+    <span class="skill-name">Databases (SQL, PHP) </span>
+    <div class="progress">
+        <div class="progress-bar" style="width: 90%; background-color: #606c38;"></div>
+    </div>
+</div>
+
+<div class="skill">
+  <span class="skill-name">IoT Skills (Soldering, Microcontroller Programming) </span>
+  <div class="progress">
+      <div class="progress-bar" style="width: 71%; background-color: #991218"></div>
+  </div>
+</div>
+
+
+        <!-- Add more skills as necessary -->
+        <div class="skill">
+          <span class="skill-name">Python</span>
+          <div class="progress">
+              <div class="progress-bar" style="width: 95%; background-color: #606c38;"></div>
+          </div>
+      </div>
+    
+      <div class="skill">
+        <span class="skill-name">PowerBI</span>
+        <div class="progress">
+            <div class="progress-bar" style="width: 86%; background-color: #606c38;"></div>
+        </div>
+    </div>
+    
+    <div class="skill">
+      <span class="skill-name">Communication, Project & Time Management</span>
+      <div class="progress">
+          <div class="progress-bar" style="width: 95%; background-color: #606c38;"></div>
+      </div>
+  </div>
+
+    <div class="skill">
+      <span class="skill-name">Latex, Technical Writing </span>
+      <div class="progress">
+          <div class="progress-bar" style="width: 93%; background-color: #606c38"></div>
+      </div>
+    </div>
+    
+    <div class="skill">
+      <span class="skill-name"> APIs </span>
+      <div class="progress">
+          <div class="progress-bar" style="width: 73%; background-color: #eeaa23"></div>
+      </div>
+    </div>
+      
+    <br>
+    <br>
+      <!---
+      <div class="experience-details-container">
+        <div class="about-containers">
+        
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills & Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML & CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>APIs</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills & Tools </h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Frameworks</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PowerBI</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Analysis</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Cloud Architecture</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+
+        
+          </div>
+
+      </div>
+
+    -->
+   
+    </section>
+    <section id="experience">
+      <br>
+      <br>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Research & Publications </h1>
+    
+      <div class="skills-container">
+        <div class="skill-box">
+            <h6>DOxy: A Dissolved Oxygen Monitoring System</h4>
+            <ul> 
+              <li> Created a dashboard using Svelte and Chart.js to visualize sensor readings </li>
+              <li> Built the backend of the dasboard using Node.js, and utilized WebSocket connections for real-time data display </li>
+              <li> Designed the database system using TimeScale DB, which builds on PostgreSQL, to efficiently store and query large volumes of IoT sensor data</li>
+              <li> Deployed the backend on an Amazon Web Services (AWS) EC2 instance as a Docker container</li>
+              
+                
+            </ul>
+        </div>
+        <div class="skill-box">
+            <h5>Agricultural IoT </h5>
+            <ul>
+              <li> Revamped the DOxy dashboard using Tremor and React to visualize the datasets of four different agricultural projects</li>
+              <li> Designed an interactive map using Mapbox API and JavaScript. Implemented layers to the map interface so that users could toggle between different projects and data sets (ex. soil meausrements, crop yield, water quality)</li>
+              <li> Soldered electronic components to assemble a wireless soil sensor </li>
+              <li> Developed and debugged Arduino scripts for accurate sensor data collection </li>
+              <li> Presented research findings to our client, a local farm, and ensured alignment with business goals and client needs</li>
+            </ul>
+         
+        </div>
+        <div class="skill-box">
+          <h5>Publications</h5>
+          <ol type="I">
+              <li>
+                  <div class="publication-entry">
+                      DOxy: MDPI Sensor Networks Journal, 2024
+                      <div class="publication-link-box">
+                          <a href="https://www.mdpi.com/1424-8220/24/10/3253" target="_blank">Visit DOxy Publication</a>
+                      </div>
+                  </div>
+                  
+              </li>
+              <li>
+                <div class="publication-entry">
+                    Hydrogen Automation: IEEE, 2020
+                    <div class="publication-link-box">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/8666457" target="_blank">Visit HA Publication</a>
+                    </div>
+                </div>
+                
+            </li>
+            </ol>
+            <br>
+            <p class="publication-description">
+              <style>
+                .publication-description
+                {
+                  color: black;
+                }
+              </style>
+              Currently working on developing Version 2.1. I am in the process of making the dashboard more suitable and secure for the data collection of cross-compatible IoT projects.
+            </p>
+              </li>
+          </ol>
+      </div>
+      
+    </div>
+  
+    </section>
+    <section id="projects">
+      <br> 
+      <br> 
+      <br>
+      <br>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects & Experience</h1>
+      
+      <div class="timeline-container">
+        <div class="timeline-block right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <style>
+                h2
+                {
+                  color: #99582a;
+                }
+              </style>
+                <h2>July 2024</h2>
+                <div class="centered-title">
+                    <h3>Stock Prediction Model</h3>
+                </div>
+                <div class="additional-info">
+                  <style>
+                    .additional-info 
+                    {
+                      font-size: 0.75em;
+                    }
+                  </style>
+                    <ul>
+                      <li> Designed a stock price prediction system using LSTM neural networks that includes historical data from Yahoo! Finance and
+                        real-time sentiment analysis from News API. Incorporating sentiment led to a 15% improvement in forecasting accuracy
+                      </li>
+                      <li>
+                        Built a graphical visualization that demonstrates a stock’s adaptability to market fluctuations by architecting a data pipeline
+                        leveraging the yfinance and vaderSentiment libraries to preprocess financial and news data, and deployed the machine learning model with Python, TensorFlow, and Keras
+                      </li>
+
+                    
+                      <p> Languages: Python, TensorFlow, JavaScript </p>
+                       
+                      <p> Libraries & Tools: yfinance, vaderSentiment, News API, requests, numpy, matplotlib, pandas, datetime, scikit, keras </p>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+        <!-- Timeline event on the left -->
+        <div class="timeline-block left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h2>June 2024 - Present</h2>
+            <div class="centered-title">
+              <h3>Security Engineer Intern @ GBCS</h3>
+          </div>
+          <div class="additional-info">
+            <style>
+              .additional-info 
+              {
+                font-size: 0.75em;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+              }
+            </style>
+            <ul>
+              <li> 
+                 Engineered secure API endpoints with Django to improve deployment efficiency by 30%, to enhance security by 40%, and to
+                increase data protection by 50% with the application of AES and RSA encryption
+                </li>
+
+              <li>
+                Optimized security by 40% through streamlined RBAC with bcrypt and JWT
+              </li>
+            
+              <li>
+                Reduced vulnerabilities by 38% and prevented SQL and XSS attacks by crafting regular expressions to sanitize inputs with
+              Python’s Re and Bleach libraries
+              </li>
+
+              <li>
+                Employed Flask-Limiter and decreased brute force attack risk by 25% through restricted login-attempts and rate-limiting per
+                IP address
+              </li>
+            </ul>
+
+            <p> 
+              Languages: Python
+            </p>
+
+            <p>
+              Libraries & Tools: bcrypt, JWT, Flask-Limiter, regular expressions, bleach, AES, RSA, cryptography, Flask
+            </p>
+            </div>
+        </div>
+      
+        <!-- Add more blocks as needed, alternating between "right" and "left" -->
+      </div>
+      <div class="timeline-container">
+        <div class="timeline-block right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <h2>May 2024</h2>
+                <div class="centered-title">
+                    <h3>Data Science Intern @ Bluebonnet Data</h3>
+                </div>
+                <div class="additional-info">
+                  <style>
+                    .additional-info 
+                    {
+                      font-size: 0.75em;
+                    }
+                  </style>
+
+                  <ul>
+                    <li> 
+                      Designed a precinct-level dashboard for Judy Schwiebert (AZ State Campaign) using PowerBI. Utilized Python's matplotlib and pandas to analyze and visualize data from the Census Bureau and the Voter Activation Network
+                    </li>
+
+                    <li>
+                      Identified trends in voter demographics by creating SQL queries to merge and analyze the registration data of different counties 
+                    </li>
+
+                    <li> 
+                      Implemented machine learning algorithms using Claude API for predictive analysis on voter behavior
+                    </li>
+
+                  <p>
+                    Languages: Python
+                  </p>
+                  
+                  <p>
+                    Libraries & Tools: PowerBI, matplotlib, pandas, Claude API, Figma
+                  </p>
+                  </ul>
+              
+                  </div>
+            </div>
+        </div>
+
+        <div class="timeline-block left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h2>Dec 2023 - May 2024</h2>
+            <div class="centered-title">
+              <h3>CITAP Student IT Architecture Competition</h3>
+          </div>
+          <div class="additional-info">
+            <style>
+              .additional-info 
+              {
+                font-size: 0.75em;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+              }
+            </style>
+
+            <ul>
+              <li>
+                Ideated an IT architectural solution for FARM, a non-profit supporting farmers and sustainability across 30 states. Addressed security, scalability, and performance
+              </li>
+
+              <li>
+                Created 5 deliverable documents: Scope/User Stories, UX/UI Architecture, Analytical Reporting, Software Architecture, Technology Stack/Development & Execution Plan
+              </li>
+
+              <li>
+                Architected a cross-platform Progressive Web App with offline functionality using Workbox, and proposed real-time data processing with Node.js, Express, and TensorFlow.js
+              </li>
+
+            </ul>
+            
+            <p>
+              
+            </p>
+            <div class="publication-link-box">
+              <a href="./assets/HarvestHub.pptx (1).pdf" target="_blank">Harvest Hub Final Product</a>
+          </div>
+          </p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    <section id="contact">
+      
+    </section>
+
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Research & Publications</a></li>
+            <li><a href="#projects">Experience</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; 2024 Siddhi Kabadi. Made with <span>&#10084;&#65039;</span> in Santa Clara</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
 
